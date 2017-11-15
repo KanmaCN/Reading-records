@@ -1,0 +1,16 @@
+1.git设置代理
+    git config --global http.proxy "http://www-proxy.us.oracle.com:80"
+    git config --global https.proxy "http://www-proxy.us.oracle.com:80"
+    这些设置最终会保存在用户目录下的 .gitconfig 文件中，打开这个文件可以看到类似的几行配置
+    [http]
+            proxy = http://www-proxy.us.oracle.com:80
+    [https]
+            proxy = http://www-proxy.us.oracle.com:80
+如果端口有变动也可以直接在这里修改。
+
+2.npm的代理设置
+     npm config set proxy http://www-proxy.us.oracle.com:80
+
+3.ALM account, add public key
+	GIT repositry
+	infolets-page.json :enter eforEnter
